@@ -5,34 +5,60 @@ Public legal site for Versa Player.
 ## Public routes
 
 - `/` — Legal landing page
-- `/privacy/` — Privacy Policy (Spanish)
+- `/privacy/es.html` — Privacy Policy (Spanish)
 - `/privacy/en.html` — Privacy Policy (English)
-- `/terms/` — Terms of Use (Spanish)
+- `/terms/es.html` — Terms of Use (Spanish)
 - `/terms/en.html` — Terms of Use (English)
-- `/third-party/` — Third-party services (Spanish)
+- `/third-party/index.html` — Third-party services (Spanish)
 - `/third-party/en.html` — Third-party services (English)
 
-## Publish with GitHub Pages
+## GitHub Pages
 
-In the repository:
+Publish from:
 
-1. Open **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select **main** and **/(root)**.
-4. Save and wait for the Pages deployment.
-5. Verify the public URLs before putting them into Versa Player or Google Play Console.
+- Branch: `main`
+- Folder: `/(root)`
 
-Expected base URL with the current repository name:
+Expected public base URL:
 
 `https://marco-god.github.io/versa-player-legal/`
 
-## Before Google Play production
+In GitHub open **Settings → Pages → Build and deployment → Deploy from a branch**, choose **main** and **/(root)**, then save.
 
-- Prefer replacing the GitHub Issues contact with a dedicated public support/privacy email.
-- Confirm that the public developer identity matches the identity used for Google Play distribution.
-- Review the policy after the final AdMob/UMP/Billing production configuration is known.
-- Keep the public policy consistent with the actual release build and Data Safety answers.
-- Re-review if remote lyrics/artwork providers, analytics, accounts, cloud sync, or other data flows are added.
+## Current status
+
+The legal pages reflect the current Versa Player model:
+
+- local-first media processing;
+- manual/local lyrics and artwork;
+- assisted web search without automatic scraping;
+- Google Play Billing for Versa Premium;
+- Google Mobile Ads / UMP for the free edition where applicable;
+- internet radio;
+- Android/device voice services;
+- no first-party account system or first-party analytics platform.
+
+## Required before Google Play production
+
+1. Publish a dedicated support/privacy email and place it in:
+   - Privacy Policy ES/EN;
+   - Terms ES/EN where appropriate;
+   - Google Play developer/contact fields.
+2. Confirm that the public developer identity matches the identity used for Google Play distribution.
+3. Review the policy against the final production configuration of AdMob, UMP and Billing.
+4. Complete Google Play Data Safety and other declarations using the final release build.
+5. Keep these pages synchronized with future changes to data flows or third-party services.
+
+GitHub Issues is a **public** support channel. Users should not be asked to publish sensitive personal information there.
+
+## Re-review required if Versa Player later adds
+
+- remote licensed lyrics/artwork providers;
+- analytics or crash-reporting services;
+- Versa accounts or cloud sync;
+- a backend receiving user data;
+- new advertising or payment providers;
+- materially different permissions or data uses.
 
 ## Security
 
