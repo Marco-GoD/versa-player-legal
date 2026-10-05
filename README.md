@@ -40,10 +40,7 @@ The legal pages reflect the current Versa Player model:
 
 ## Required before Google Play production
 
-1. Publish a dedicated support/privacy email and place it in:
-   - Privacy Policy ES/EN;
-   - Terms ES/EN where appropriate;
-   - Google Play developer/contact fields.
+1. Support/privacy email configured: `marcogod.contact@gmail.com`. Keep the same contact in Google Play developer/contact fields.
 2. Confirm that the public developer identity matches the identity used for Google Play distribution.
 3. Review the policy against the final production configuration of AdMob, UMP and Billing.
 4. Complete Google Play Data Safety and other declarations using the final release build.
