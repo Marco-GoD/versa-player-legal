@@ -1,10 +1,17 @@
-:root{color-scheme:dark;--bg:#090712;--panel:#121022;--text:#f4f1ff;--muted:#b8b1cb;--accent:#8b5cf6;--accent2:#22d3ee;--line:#2a2440;--max:900px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 0%,#211743 0,transparent 34%),linear-gradient(180deg,#090712,#07060d);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-a{color:#bda7ff}.wrap{max-width:var(--max);margin:auto;padding:32px 20px 64px}.top{display:flex;gap:16px;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:34px;flex-wrap:wrap}.brand{font-weight:800;letter-spacing:.08em}.nav{display:flex;gap:14px;flex-wrap:wrap}.nav a{text-decoration:none;color:var(--muted)}.nav a:hover{color:var(--text)}
+:root{color-scheme:dark;--bg:#090712;--panel:#121022;--panel2:#17132b;--text:#f4f1ff;--muted:#b8b1cb;--accent:#8b5cf6;--accent2:#22d3ee;--line:#2a2440;--max:900px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 15% 0%,#211743 0,transparent 34%),linear-gradient(180deg,#090712,#07060d);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:#c7b5ff;text-underline-offset:.18em}.wrap{max-width:var(--max);margin:auto;padding:32px 20px 64px}
+.top{display:flex;gap:16px;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:34px;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:.08em;color:var(--text);text-decoration:none}.nav{display:flex;gap:14px;flex-wrap:wrap}.nav a{text-decoration:none;color:var(--muted)}.nav a:hover,.nav a:focus-visible{color:var(--text)}
 .hero{padding:28px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(139,92,246,.12),rgba(34,211,238,.05));margin-bottom:30px}
 h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.08;margin:.2em 0}.subtitle{color:var(--muted);font-size:1.08rem}.meta{color:var(--muted);font-size:.92rem}
-h2{margin-top:2.2em;font-size:1.45rem}h3{margin-top:1.5em}.card{background:rgba(18,16,34,.9);border:1px solid var(--line);border-radius:18px;padding:20px;margin:16px 0}
+h2{margin-top:2.2em;font-size:1.45rem}h3{margin-top:1.5em}.card h2{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:rgba(18,16,34,.9);border:1px solid var(--line);border-radius:18px;padding:20px;margin:0}.card.full{grid-column:1/-1}
+.doc-link{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border-radius:12px;text-decoration:none;background:rgba(255,255,255,.025)}.doc-link:hover,.doc-link:focus-visible{background:rgba(139,92,246,.1)}.doc-link span{color:var(--muted);font-size:.92rem}
 ul{padding-left:1.25rem}.badge{display:inline-block;padding:4px 10px;border-radius:999px;background:#211747;border:1px solid #3f3370;color:#d8ccff;font-size:.85rem}
-footer{margin-top:54px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}.lang{font-size:.92rem}.notice{border-left:3px solid var(--accent2);padding:10px 14px;background:rgba(34,211,238,.06);border-radius:8px}
+footer{margin-top:54px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}.sep{padding:0 .25rem}.fineprint{margin:.65rem 0 0;font-size:.82rem;color:#958da9}.lang{font-size:.92rem}
+.notice{border-left:3px solid var(--accent2);padding:10px 14px;background:rgba(34,211,238,.06);border-radius:8px}.callout{padding:14px 16px;border:1px solid var(--line);background:rgba(139,92,246,.07);border-radius:12px;color:var(--muted)}
 code{background:#171329;padding:.1em .35em;border-radius:6px}
-@media(max-width:640px){.wrap{padding:22px 16px 46px}.hero{padding:20px}.nav{font-size:.95rem}}
+@media(max-width:640px){.wrap{padding:22px 16px 46px}.hero{padding:20px}.nav{font-size:.95rem}.grid{grid-template-columns:1fr}.card.full{grid-column:auto}.sep{display:none}footer>span,footer>a{display:block;margin:.15rem 0}}
