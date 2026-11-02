@@ -1,66 +1,98 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Política de privacidad — Versa Player</title><meta name="description" content="Política de privacidad de Versa Player para Android."><link rel="stylesheet" href="../styles.css"></head>
-<body><main class="wrap">
-<header class="top"><a class="brand" href="../index.html">VERSA PLAYER</a><nav class="nav"><a href="../index.html">Inicio</a><a href="../terms/es.html">Términos</a><a class="lang" href="./en.html">English</a></nav></header>
-<section class="hero"><span class="badge">Política de privacidad</span><h1>Privacidad en Versa Player</h1><p class="meta">Última actualización: 4 de octubre de 2026</p><p class="subtitle">Esta política explica qué información utiliza Versa Player, qué permanece en tu dispositivo y cuándo intervienen servicios externos.</p></section>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Política de privacidad — Versa Player</title>
+  <meta name="description" content="Política de privacidad de Versa Player para Android.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="top">
+    <a class="brand" href="../index.html">VERSA PLAYER</a>
+    <nav class="nav">
+      <a href="../index.html">Inicio</a>
+      <a href="../terms/es.html">Términos</a>
+      <a class="lang" href="./en.html">English</a>
+    </nav>
+  </header>
 
-<h2>1. Responsable y contacto</h2>
-<p>Versa Player es un proyecto de software independiente operado desde Chile. Identificador público del proyecto: <strong>Versa Player / Marco-GoD</strong>. Para soporte y solicitudes privadas de privacidad puedes escribir a <a href="mailto:marcogod.contact@gmail.com">marcogod.contact@gmail.com</a>. Para incidencias generales que no requieran compartir información personal sensible también puede utilizarse el <a href="https://github.com/Marco-GoD/versa-player-legal/issues">canal público de GitHub Issues</a>.</p>
-<p class="callout"><strong>Privacidad:</strong> no publiques contraseñas, datos de pago, documentos de identidad ni otra información personal sensible en GitHub Issues; utiliza el correo de contacto para solicitudes privadas.</p>
+  <section class="hero">
+    <span class="badge">Política de privacidad</span>
+    <h1>Privacidad en Versa Player</h1>
+    <p class="meta">Última actualización: 2 de noviembre de 2026</p>
+    <p class="subtitle">Esta política explica qué información utiliza Versa Player, qué permanece en tu dispositivo y cuándo intervienen servicios externos.</p>
+  </section>
 
-<h2>2. Enfoque local-first</h2>
-<p>Versa Player está diseñado principalmente como un reproductor multimedia local. Tu biblioteca, favoritos, playlists, elementos ocultos, historial, estadísticas de escucha, preferencias visuales, ecualizador, balance, ajustes de Iris y el contenido manual que añades se procesan principalmente en tu dispositivo.</p>
-<p>Versa Player no ofrece una cuenta propia, no sube tu biblioteca musical a un servidor de Versa Player y no mantiene un servicio propio de almacenamiento en la nube para tus canciones.</p>
+  <h2>1. Responsable y contacto</h2>
+  <p>Versa Player es un proyecto de software independiente operado desde Chile. Identificador público del proyecto: <strong>Versa Player / Marco-GoD</strong>. Para soporte y solicitudes privadas de privacidad puedes escribir a <a href="mailto:marcogod.contact@gmail.com">marcogod.contact@gmail.com</a>. Para incidencias generales que no requieran compartir información personal sensible también puede utilizarse el <a href="https://github.com/Marco-GoD/versa-player-legal/issues">canal público de GitHub Issues</a>.</p>
+  <p class="callout"><strong>Privacidad:</strong> no publiques contraseñas, datos de pago, documentos de identidad ni otra información personal sensible en GitHub Issues; utiliza el correo de contacto para solicitudes privadas.</p>
 
-<h2>3. Acceso a la biblioteca multimedia</h2>
-<p>Con los permisos que Android solicite según la versión del sistema, Versa Player puede leer archivos de audio y, cuando corresponda, vídeo para mostrar la biblioteca, metadatos, miniaturas y permitir la reproducción. Este acceso corresponde a la función principal del reproductor.</p>
-<p>La app no solicita acceso global a todos los archivos del dispositivo ni permiso directo de micrófono como requisito general. La selección manual de imágenes para carátulas utiliza los mecanismos del sistema disponibles.</p>
+  <h2>2. Enfoque local-first</h2>
+  <p>Versa Player está diseñado principalmente como un reproductor multimedia local. Tu biblioteca, favoritos, playlists, elementos ocultos, historial, estadísticas de escucha, preferencias visuales, ecualizador, balance, ajustes de Iris y el contenido manual que añades se procesan principalmente en tu dispositivo.</p>
+  <p>Versa Player no ofrece una cuenta propia, no sube tu biblioteca musical a un servidor de Versa Player y no mantiene un servicio propio de almacenamiento en la nube para tus canciones.</p>
 
-<h2>4. Información almacenada localmente</h2>
-<p>La app puede guardar en almacenamiento privado del dispositivo:</p>
-<ul><li>favoritos, playlists, elementos ocultos e historial;</li><li>estadísticas de reproducción y BPM calculado;</li><li>tema, apariencia, ajustes de reproducción, ecualizador, balance e Iris;</li><li>letras pegadas o importadas y sincronizaciones creadas manualmente;</li><li>carátulas elegidas manualmente;</li><li>información técnica mínima para recordar temporalmente un entitlement Premium previamente verificado.</li></ul>
-<p>La configuración actual excluye estos datos del backup automático de Android. Desinstalar la app o borrar sus datos puede eliminar esta información local. Una compra Premium válida puede restaurarse mediante Google Play.</p>
+  <h2>3. Acceso a la biblioteca multimedia</h2>
+  <p>Con los permisos que Android solicite según la versión del sistema (<code>READ_MEDIA_AUDIO</code>, <code>READ_MEDIA_VIDEO</code> o <code>READ_EXTERNAL_STORAGE</code> hasta Android 12), Versa Player puede leer archivos de audio y vídeo locales para detectar, organizar, mostrar miniaturas y reproducir tu biblioteca multimedia integrada. Este acceso corresponde a la función principal del reproductor.</p>
+  <p>La app utiliza asimismo un servicio en primer plano de reproducción multimedia (<code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>) exclusivamente cuando el usuario reproduce audio o radio con la aplicación en segundo plano o la pantalla apagada. La app no solicita acceso global a todos los archivos del dispositivo ni permiso directo de micrófono (<code>RECORD_AUDIO</code>).</p>
 
-<h2>5. Letras y carátulas</h2>
-<p>Versa Player puede mostrar letras y carátulas embebidas en archivos locales o añadidas manualmente por el usuario. También puede abrir una búsqueda web únicamente cuando el usuario pulsa expresamente la opción correspondiente.</p>
-<p>Versa Player no lee ni extrae automáticamente el contenido de las páginas web que visitas. Si eliges copiar, pegar, importar o seleccionar una letra o imagen, ese contenido se guarda o asocia localmente a la pista. Las letras pegadas pueden sincronizarse manualmente utilizando la posición real de reproducción.</p>
-<p>El usuario es responsable de contar con los derechos o permisos necesarios respecto del contenido que decide incorporar.</p>
+  <h2>4. Información almacenada localmente</h2>
+  <p>La app puede guardar en almacenamiento privado del dispositivo:</p>
+  <ul>
+    <li>favoritos, playlists, elementos ocultos e historial;</li>
+    <li>estadísticas de reproducción y BPM calculado;</li>
+    <li>tema, apariencia, ajustes de reproducción, ecualizador, balance e Iris;</li>
+    <li>letras pegadas o importadas y sincronizaciones creadas manualmente;</li>
+    <li>carátulas elegidas manualmente;</li>
+    <li>información técnica mínima para recordar temporalmente un entitlement Premium previamente verificado.</li>
+  </ul>
+  <p>La configuración actual excluye estos datos del backup automático de Android. Desinstalar la app o borrar sus datos puede eliminar esta información local. Una compra Premium válida puede restaurarse mediante Google Play.</p>
 
-<h2>6. Publicidad</h2>
-<p>La edición gratuita puede mostrar publicidad nativa mediante <strong>Google Mobile Ads (AdMob)</strong>. Google y sus proveedores pueden tratar datos como dirección IP, ubicación aproximada, identificadores publicitarios o del dispositivo, interacciones con anuncios y diagnósticos, conforme a sus propias políticas y a las opciones de consentimiento aplicables.</p>
-<p>Versa Player utiliza Google User Messaging Platform (UMP) cuando corresponde para presentar opciones de privacidad y consentimiento. Una vez confirmado el acceso Premium, el flujo normal de Versa Player no solicita anuncios para ese usuario.</p>
+  <h2>5. Letras y carátulas</h2>
+  <p>Versa Player puede mostrar letras y carátulas embebidas en archivos locales o añadidas manualmente por el usuario. También puede abrir una búsqueda web únicamente cuando el usuario pulsa expresamente la opción correspondiente.</p>
+  <p>Versa Player no lee ni extrae automáticamente el contenido de las páginas web que visitas. Si eliges copiar, pegar, importar o seleccionar una letra o imagen, ese contenido se guarda o asocia localmente a la pista. Las letras pegadas pueden sincronizarse manualmente utilizando la posición real de reproducción.</p>
+  <p>El usuario es responsable de contar con los derechos o permisos necesarios respecto del contenido que decide incorporar.</p>
 
-<h2>7. Versa Premium y Google Play</h2>
-<p>Versa Premium se gestiona mediante Google Play Billing. Versa Player puede recibir información técnica sobre el estado de compra necesaria para conceder, restaurar o retirar el acceso Premium. Versa Player no recibe ni almacena los datos completos de tu tarjeta o método de pago.</p>
+  <h2>6. Publicidad</h2>
+  <p>La edición gratuita puede mostrar publicidad nativa o intersticial mediante <strong>Google Mobile Ads (AdMob)</strong>. Google y sus socios pueden procesar datos como dirección IP, ubicación aproximada, identificadores publicitarios/del dispositivo, interacciones con anuncios y diagnósticos conforme a la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a> y a <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Cómo utiliza Google la información de las aplicaciones que usan nuestros servicios</a>.</p>
+  <p>Versa Player utiliza Google User Messaging Platform (UMP) donde corresponda para presentar y gestionar las opciones de privacidad y consentimiento. Una vez confirmado el acceso a Versa Premium, el flujo normal de la aplicación desactiva la solicitud de anuncios para ese usuario.</p>
 
-<h2>8. Radio por Internet</h2>
-<p>La función de radio puede consultar un directorio externo y conectarse directamente al servidor de la emisora seleccionada. Estos servicios pueden recibir información técnica normal de una conexión de red, incluida la dirección IP. Algunas emisoras antiguas pueden utilizar HTTP en lugar de HTTPS.</p>
+  <h2>7. Versa Premium y Google Play</h2>
+  <p>Versa Premium se gestiona mediante <strong>Google Play Billing</strong>. Versa Player puede recibir información técnica del estado de la compra necesaria para activar, restaurar o revocar el acceso Premium. Versa Player no recibe ni almacena los datos completos de tu tarjeta o método de pago.</p>
 
-<h2>9. Reconocimiento y síntesis de voz</h2>
-<p>Las funciones de voz pueden utilizar servicios de reconocimiento o síntesis proporcionados por Android o por el proveedor configurado en el dispositivo. Dependiendo del proveedor y de la configuración del usuario, voz o texto pueden procesarse en servidores externos. Versa Player no controla las prácticas de privacidad de esos proveedores.</p>
+  <h2>8. Radio por Internet</h2>
+  <p>La función de radio puede consultar un directorio externo de emisoras (Radio Browser) y conectarse directamente al servidor de transmisión de la emisora seleccionada por el usuario. Dichos servicios reciben información estándar de red, como la dirección IP necesaria para establecer la conexión de audio.</p>
 
-<h2>10. Analítica y cuentas</h2>
-<p>Versa Player no incorpora un sistema propio de cuentas, analytics ni crash reporting. Esto no significa que servicios externos como Google Mobile Ads, Google Play, una emisora de radio o el proveedor de voz del dispositivo no procesen información conforme a sus propias políticas.</p>
+  <h2>9. Servicios de voz</h2>
+  <p>Las funciones de voz pueden apoyarse en servicios de reconocimiento de voz del sistema Android cuando el usuario inicia activamente una búsqueda por voz. Dependiendo del proveedor configurado en el dispositivo, la consulta puede procesarse conforme a las políticas de dicho proveedor.</p>
 
-<h2>11. Controles del usuario y retención</h2>
-<p>La aplicación ofrece controles locales para gestionar historial, estadísticas, apariencia, letras/carátulas añadidas y cachés propios. Android también permite borrar los datos de la aplicación o desinstalarla.</p>
-<p>Los datos locales permanecen mientras existan en el dispositivo y hasta que el usuario los elimine, restablezca la aplicación o la desinstale. Los datos tratados por servicios externos están sujetos a las políticas y períodos de retención de dichos servicios.</p>
+  <h2>10. Analítica y cuentas</h2>
+  <p>Versa Player no incorpora un sistema propio de cuentas, analytics ni crash reporting propio. Esto no significa que servicios externos como Google Mobile Ads, Google Play, una emisora de radio o el proveedor de voz del dispositivo no procesen información conforme a sus propias políticas.</p>
 
-<h2>12. Seguridad</h2>
-<p>Versa Player utiliza almacenamiento privado de Android para sus datos internos y procura minimizar la información transmitida. Las conexiones con Google y otros servicios configurados usan mecanismos seguros cuando el proveedor los soporta; algunas transmisiones de radio pueden depender de la configuración de cada emisora.</p>
+  <h2>11. Controles del usuario y retención</h2>
+  <p>La aplicación ofrece un control local directo en <strong>Ajustes → Privacidad y legal</strong> para borrar el historial de reproducción y las estadísticas de escucha en cualquier momento. El resto de las preferencias locales (listas de reproducción, favoritos, elementos ocultos, apariencia y ecualizador) pueden modificarse desde sus respectivas secciones de la aplicación.</p>
+  <p>Los datos locales permanecen en el dispositivo mientras la aplicación esté instalada o hasta que el usuario los restablezca o elimine los datos de la aplicación desde los ajustes del sistema Android. Los datos tratados por servicios externos están sujetos a las políticas y períodos de retención de dichos proveedores.</p>
 
-<h2>13. Menores</h2>
-<p>Versa Player es un reproductor multimedia de propósito general y no está diseñado específicamente como producto infantil. La audiencia declarada en Google Play y cualquier tratamiento especial para menores deben corresponder a la distribución real de la aplicación y a la legislación aplicable.</p>
+  <h2>12. Seguridad</h2>
+  <p>Versa Player utiliza almacenamiento privado de Android para sus datos internos y procura minimizar la información transmitida. Las conexiones con Google y otros servicios configurados usan mecanismos seguros (HTTPS/TLS) cuando el proveedor los soporta; algunas transmisiones de radio pueden depender de la configuración de cada emisora.</p>
 
-<h2>14. Derechos y solicitudes</h2>
-<p>Dependiendo de tu jurisdicción, puedes tener derechos de acceso, rectificación, eliminación, oposición, limitación o portabilidad respecto de datos personales. Como la mayoría de los datos de Versa Player permanecen localmente en tu dispositivo, muchos controles pueden ejercerse directamente desde la app o Android. Para datos tratados por Google, una emisora u otro tercero, también pueden aplicar los mecanismos de ese proveedor.</p>
-<p>Para consultas o solicitudes privadas de privacidad puedes escribir a <a href="mailto:marcogod.contact@gmail.com">marcogod.contact@gmail.com</a>.</p>
+  <h2>13. Menores</h2>
+  <p>Versa Player es un reproductor multimedia de propósito general y no está dirigido a menores de edad. La audiencia objetivo declarada en Google Play es a partir de 18 años.</p>
 
-<h2>15. Cambios en esta política</h2>
-<p>Esta política puede actualizarse cuando cambien las funciones, servicios externos, legislación o prácticas de Versa Player. La fecha de la revisión más reciente se indica al inicio de esta página.</p>
+  <h2>14. Derechos y solicitudes</h2>
+  <p>Dependiendo de tu jurisdicción, puedes tener derechos de acceso, rectificación, eliminación, oposición, limitación o portabilidad respecto de datos personales. Como la mayoría de los datos de Versa Player permanecen localmente en tu dispositivo, muchos controles pueden ejercerse directamente desde la app o Android. Para datos tratados por Google, una emisora u otro tercero, también pueden aplicar los mecanismos de ese proveedor.</p>
+  <p>Para consultas o solicitudes privadas de privacidad puedes escribir a <a href="mailto:marcogod.contact@gmail.com">marcogod.contact@gmail.com</a>.</p>
 
-<h2>16. Servicios externos relevantes</h2>
-<p>Consulta también <a href="../third-party/index.html">Servicios de terceros</a> para una descripción resumida de los servicios externos asociados a Versa Player.</p>
-<footer><a href="../index.html">Versa Player Legal</a> · <a href="./en.html">English</a> · <a href="https://github.com/Marco-GoD/versa-player-legal/issues">Soporte público</a></footer>
-</main></body></html>
+  <h2>15. Cambios en esta política</h2>
+  <p>Esta política puede actualizarse cuando cambien las funciones, servicios externos, legislación o prácticas de Versa Player. La fecha de la revisión más reciente se indica al inicio de esta página.</p>
+
+  <h2>16. Servicios externos relevantes</h2>
+  <p>Consulta también <a href="../third-party/index.html">Servicios de terceros</a> para una descripción resumida de los servicios externos asociados a Versa Player.</p>
+
+  <footer>
+    <a href="../index.html">Versa Player Legal</a> · <a href="./en.html">English</a> · <a href="https://github.com/Marco-GoD/versa-player-legal/issues">Soporte público</a>
+  </footer>
+</main>
+</body>
+</html>
